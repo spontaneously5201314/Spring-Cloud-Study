@@ -1,1 +1,2 @@
-#这个工程是用来学习Spring Cloud
+#学习Spring Cloud
+主要包括Spring Boot/Spring Cloud Eureka/...
