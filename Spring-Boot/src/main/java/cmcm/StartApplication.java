@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author hongfei
  * @create 2018-02-08 下午8:09
  */
-@SpringBootApplication
+//@SpringBootApplication
 public class StartApplication {
 
     /**
