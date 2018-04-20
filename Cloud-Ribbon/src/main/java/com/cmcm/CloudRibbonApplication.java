@@ -1,8 +1,12 @@
 package com.cmcm;
 
+import com.ctrip.framework.apollo.model.ConfigChangeEvent;
+import com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.context.scope.refresh.RefreshScope;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
@@ -14,6 +18,14 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @SpringBootApplication
 public class CloudRibbonApplication {
+
+    @Autowired
+    private RefreshScope refreshScope;
+
+    @ApolloConfigChangeListener
+    public void refreshConfig(ConfigChangeEvent event) {
+        refreshScope.refreshAll();
+    }
 
     @Bean
     @LoadBalanced
