@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @create 2018-04-20 下午5:50
  */
 @RestController
+@RequestMapping("/consumer")
 public class FeignController {
 
     @Autowired

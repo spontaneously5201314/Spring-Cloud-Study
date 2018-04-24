@@ -13,6 +13,9 @@ feign:
   hystrix:
     enabled: true
 
+logging:
+  level: debug
+
 #Ribbon 超时时间设置
 #ribbon:
 #  ConnectTimeout: 500
