@@ -13,6 +13,7 @@
         <module>Cloud-Feign</module>
         <module>Cloud-Ribbon</module>
         <module>Cloud-Hystrix</module>
+        <module>Cloud-Sleuth</module>
         <module>Cloud-Zuul</module>
         <module>Data-Cassandra</module>
         <module>Spring-Boot</module>

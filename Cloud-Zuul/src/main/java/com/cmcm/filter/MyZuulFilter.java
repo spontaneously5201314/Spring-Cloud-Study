@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author hongfei
@@ -37,8 +38,17 @@ public class MyZuulFilter extends ZuulFilter{
         HttpServletRequest request = currentContext.getRequest();
         String token = request.getParameter("token");
         if(StringUtils.isEmpty(token) || StringUtils.isBlank(token)){
-            logger.error("没有收到token");
+            try {
+                doSomething();
+            } catch (Exception e) {
+                currentContext.set("error.status_code", HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+                currentContext.set("error.exception", "这里发生了错误");
+            }
         }
         return null;
+    }
+
+    private void doSomething(){
+        throw new RuntimeException("没有收到token");
     }
 }
