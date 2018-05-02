@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>Basic-SE</module>
         <module>Cloud-Bus</module>
         <module>Cloud-Config</module>
         <module>Cloud-Eureka</module>
