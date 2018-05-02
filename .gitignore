@@ -6,4 +6,5 @@ mvnw.cmd
 *.iml
 *.ipr
 target/
+build/
 
