@@ -1,7 +1,7 @@
 package com.cmcm;
 
-import com.ctrip.framework.apollo.model.ConfigChangeEvent;
-import com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
+//import com.ctrip.framework.apollo.model.ConfigChangeEvent;
+//import com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,10 +22,10 @@ public class CloudRibbonApplication {
     @Autowired
     private RefreshScope refreshScope;
 
-    @ApolloConfigChangeListener
-    public void refreshConfig(ConfigChangeEvent event) {
-        refreshScope.refreshAll();
-    }
+//    @ApolloConfigChangeListener
+//    public void refreshConfig(ConfigChangeEvent event) {
+//        refreshScope.refreshAll();
+//    }
 
     @Bean
     @LoadBalanced

@@ -1,7 +1,5 @@
 package com.cmcm.controller;
 
-import com.cmcm.service.HelloService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,24 +9,20 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * @author hongfei
- * @create 2018-03-20 下午8:13
+ * @create 2018-05-02 下午8:37
  */
 @RestController
-public class HystrixController {
+public class RibbonController {
 
-    @Autowired
-    private HelloService helloService;
-
-    @Autowired
-    private RestTemplate restTemplate;
+    @Bean
+    @LoadBalanced
+    public RestTemplate restTemplate(){
+        return new RestTemplate();
+    }
 
     @RequestMapping(value = "/getInfo", method = RequestMethod.GET)
     public String getInfo(){
-        return restTemplate.getForEntity("http://ribbon/getInfo", String.class).getBody();
+        return restTemplate().getForEntity("http://www.baidu.com", String.class).getBody();
     }
 
-    @RequestMapping(value = "/consumer", method = RequestMethod.GET)
-    public String helloConsumer() {
-        return helloService.call();
-    }
 }
