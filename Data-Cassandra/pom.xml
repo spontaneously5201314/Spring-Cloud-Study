@@ -10,11 +10,11 @@
     </parent>
 
     <groupId>com.cmcm</groupId>
-    <artifactId>Spring-Data-Cassandra</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>spring-data-cassandra</artifactId>
+    <version>${build.version}</version>
     <packaging>jar</packaging>
 
-    <name>data-cassandra</name>
+    <name>Data-Cassandra</name>
     <description>Demo project for Spring Cloud Cassandra</description>
 
     <properties>

@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>cloud-sleuth</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${build.version}</version>
 	<packaging>pom</packaging>
 
-	<name>cloud-sleuth</name>
+	<name>Cloud-Sleuth</name>
 	<description>Demo project for Spring Cloud Sleuth</description>
 
 	<parent>

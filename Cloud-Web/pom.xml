@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>cloud-web</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${build.version}</version>
 	<packaging>jar</packaging>
 
 	<name>Cloud-Web</name>

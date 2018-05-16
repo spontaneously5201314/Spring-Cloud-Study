@@ -21,6 +21,8 @@
         <module>Cloud-Zuul</module>
         <module>Data-Cassandra</module>
         <module>Spring-Boot</module>
+        <module>Shell_Action</module>
+        <module>Docker_Action</module>
     </modules>
 
     <name>Spring-Cloud-Study</name>
@@ -34,6 +36,9 @@
     </parent>
 
     <properties>
+        <!-- 定义一个变量来控制全局所有子工程的版本 -->
+        <!--<build.version>0.0.1-SNAPSHOT</build.version>-->
+
         <spring-cloud.version>Edgware.SR1</spring-cloud.version>
         <springboot.version>1.5.9.RELEASE</springboot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

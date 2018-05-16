@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-cloud-feign-consumer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${build.version}</version>
     <packaging>jar</packaging>
 
-    <name>spring-cloud-feign-consumer</name>
+    <name>Spring-Cloud-Feign-Consumer</name>
     <description>Demo project for Spring Cloud Feign Consumer</description>
 
     <parent>

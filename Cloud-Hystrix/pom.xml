@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.cmcm</groupId>
-	<artifactId>Cloud-Hystrix</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>cloud-hystrix</artifactId>
+	<version>${build.version}</version>
 	<packaging>jar</packaging>
 
-	<name>cloud_hystrix</name>
+	<name>Cloud_Hystrix</name>
 	<description>Demo project for Spring Cloud Hystrix</description>
 
 	<parent>

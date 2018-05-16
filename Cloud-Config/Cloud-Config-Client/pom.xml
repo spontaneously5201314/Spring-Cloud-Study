@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>cloud-config-client</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${build.version}</version>
 	<packaging>jar</packaging>
 
 	<name>Cloud-Config-Client</name>
@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>com.cmcm.study</groupId>
 		<artifactId>cloud-config</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>${build.version}</version>
 	</parent>
 
 	<properties>
@@ -24,10 +24,10 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-web</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-web</artifactId>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter</artifactId>
