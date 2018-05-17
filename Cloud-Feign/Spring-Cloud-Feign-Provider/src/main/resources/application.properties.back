@@ -4,3 +4,4 @@ spring.application.name=cloud-feign-provider
 eureka.client.registerWithEureka=true
 #eureka.client.fetchRegistr=true
 eureka.client.serviceUrl.defaultZone=http://localhost:8080/eureka/
+

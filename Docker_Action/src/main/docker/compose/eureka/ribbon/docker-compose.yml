@@ -1,0 +1,12 @@
+#表示使用的是Version2版本的语法
+version: '2'
+services:
+  registry-server:
+    image: spontaneously/spring-cloud-eureka:0.0.1
+    ports:
+      - "8761:8761"
+  ribbon:
+    image: spontaneously/spring-cloud-ribbon:0.0.1
+    #在Version2版本的compose.yml下面，所有的服务共享一个隔离网络，所以下面的links也可以去掉
+    links:
+      - registry-server:registry-center

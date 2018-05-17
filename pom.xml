@@ -11,6 +11,7 @@
     <modules>
         <module>Basic-SE</module>
         <module>Cloud-Bus</module>
+        <module>Cloud-Commons</module>
         <module>Cloud-Config</module>
         <module>Cloud-Eureka</module>
         <module>Cloud-Feign</module>
@@ -23,6 +24,7 @@
         <module>Spring-Boot</module>
         <module>Shell_Action</module>
         <module>Docker_Action</module>
+        <module>Spring-Action</module>
     </modules>
 
     <name>Spring-Cloud-Study</name>
@@ -37,7 +39,7 @@
 
     <properties>
         <!-- 定义一个变量来控制全局所有子工程的版本 -->
-        <!--<build.version>0.0.1-SNAPSHOT</build.version>-->
+        <build.version>0.0.1</build.version>
 
         <spring-cloud.version>Edgware.SR1</spring-cloud.version>
         <springboot.version>1.5.9.RELEASE</springboot.version>
@@ -82,6 +84,11 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${springboot.version}</version>
             </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-starter-quartz</artifactId>-->
+                <!--<version>${springboot.version}</version>-->
+            <!--</dependency>-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
