@@ -1,9 +1,9 @@
 package com.cmcm.study;
 
-//import org.junit.Test;
-//import org.junit.runner.RunWith;
-//import org.springframework.boot.test.context.SpringBootTest;
-//import org.springframework.test.context.junit4.SpringRunner;
+//importannotation org.junit.Test;
+//importannotation org.junit.runner.RunWith;
+//importannotation org.springframework.boot.test.context.SpringBootTest;
+//importannotation org.springframework.test.context.junit4.SpringRunner;
 //
 //@RunWith(SpringRunner.class)
 //@SpringBootTest

@@ -1,15 +1,15 @@
 package com.cmcm.config;
 //
-//import com.ctrip.framework.apollo.Config;
-//import com.ctrip.framework.apollo.spi.ConfigFactory;
-//import com.ctrip.framework.apollo.spi.DefaultConfigFactoryManager;
-//import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
-//import org.apache.commons.lang.StringUtils;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
-//import org.springframework.beans.factory.annotation.Value;
-//import org.springframework.context.annotation.Bean;
-//import org.springframework.context.annotation.Configuration;
+//importannotation com.ctrip.framework.apollo.Config;
+//importannotation com.ctrip.framework.apollo.spi.ConfigFactory;
+//importannotation com.ctrip.framework.apollo.spi.DefaultConfigFactoryManager;
+//importannotation com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
+//importannotation org.apache.commons.lang.StringUtils;
+//importannotation org.slf4j.Logger;
+//importannotation org.slf4j.LoggerFactory;
+//importannotation org.springframework.beans.factory.annotation.Value;
+//importannotation org.springframework.context.annotation.Bean;
+//importannotation org.springframework.context.annotation.Configuration;
 
 /**
  * @author hongfei

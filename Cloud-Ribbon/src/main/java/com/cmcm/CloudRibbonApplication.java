@@ -1,7 +1,7 @@
 package com.cmcm;
 
-//import com.ctrip.framework.apollo.model.ConfigChangeEvent;
-//import com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
+//importannotation com.ctrip.framework.apollo.model.ConfigChangeEvent;
+//importannotation com.ctrip.framework.apollo.spring.annotation.ApolloConfigChangeListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

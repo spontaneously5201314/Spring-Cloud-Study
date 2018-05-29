@@ -1,12 +1,12 @@
 //package com.cmcm.entity;
 //
-//import org.springframework.cassandra.core.PrimaryKeyType;
-//import org.springframework.data.cassandra.mapping.Column;
-//import org.springframework.data.cassandra.mapping.PrimaryKeyColumn;
-//import org.springframework.data.cassandra.mapping.Table;
+//importannotation org.springframework.cassandra.core.PrimaryKeyType;
+//importannotation org.springframework.data.cassandra.mapping.Column;
+//importannotation org.springframework.data.cassandra.mapping.PrimaryKeyColumn;
+//importannotation org.springframework.data.cassandra.mapping.Table;
 //
-//import java.io.Serializable;
-//import java.util.Date;
+//importannotation java.io.Serializable;
+//importannotation java.util.Date;
 //
 ///**
 // * @author hongfei

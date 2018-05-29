@@ -7,3 +7,12 @@ management:
 endpoints:
   shutdown:
     enabled: true
+logging:
+  level: error
+#logging:
+#  level:
+#   root: trace
+#   org:
+#    apache: info
+#    springframework: trace
+#   javax: info

@@ -14,14 +14,14 @@ import org.springframework.core.env.Environment;
 @Configuration
 //@PropertySource(value = "classpath:jdbc.properties")
 //@PropertySource(value = "classpath:orm.properties")
-@PropertySources({@PropertySource(value = "classpath:jdbc.properties"), @PropertySource(value = "classpath:orm.properties")})
+//@PropertySources({@PropertySource(value = "classpath:jdbc.properties"), @PropertySource(value = "classpath:orm.properties")})
 public class MyConfig {
 
     @Autowired
     private Environment environment;
 
-    @Value("${name}")
-    private String name;
+//    @Value("${name}")
+//    private String name;
 
     public void show() {
         System.out.println(environment.getProperty("spring.profiles.active"));

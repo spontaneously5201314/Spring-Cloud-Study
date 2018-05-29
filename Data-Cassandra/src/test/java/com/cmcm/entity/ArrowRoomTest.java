@@ -1,18 +1,18 @@
 //package com.cmcm.entity;
 //
-//import org.junit.Test;
-//import org.junit.runner.RunWith;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.cglib.beans.BeanCopier;
-//import org.springframework.data.cassandra.core.CassandraOperations;
-//import org.springframework.data.cassandra.repository.MapId;
-//import org.springframework.data.cassandra.repository.Query;
-//import org.springframework.data.cassandra.repository.support.BasicMapId;
-//import org.springframework.test.context.ContextConfiguration;
-//import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+//importannotation org.junit.Test;
+//importannotation org.junit.runner.RunWith;
+//importannotation org.springframework.beans.factory.annotation.Autowired;
+//importannotation org.springframework.cglib.beans.BeanCopier;
+//importannotation org.springframework.data.cassandra.core.CassandraOperations;
+//importannotation org.springframework.data.cassandra.repository.MapId;
+//importannotation org.springframework.data.cassandra.repository.Query;
+//importannotation org.springframework.data.cassandra.repository.support.BasicMapId;
+//importannotation org.springframework.test.context.ContextConfiguration;
+//importannotation org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 //
-//import java.util.Date;
-//import java.util.List;
+//importannotation java.util.Date;
+//importannotation java.util.List;
 //
 ///**
 // * @author hongfei

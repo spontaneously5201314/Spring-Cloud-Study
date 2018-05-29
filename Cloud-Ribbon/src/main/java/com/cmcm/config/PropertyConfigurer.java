@@ -1,15 +1,15 @@
 //package com.cmcm.config;
 //
-//import com.ctrip.framework.apollo.Config;
-//import com.ctrip.framework.apollo.ConfigService;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
+//importannotation com.ctrip.framework.apollo.Config;
+//importannotation com.ctrip.framework.apollo.ConfigService;
+//importannotation org.slf4j.Logger;
+//importannotation org.slf4j.LoggerFactory;
 //
-//import java.io.IOException;
-//import java.io.StringReader;
-//import java.text.MessageFormat;
-//import java.util.Enumeration;
-//import java.util.Properties;
+//importannotation java.io.IOException;
+//importannotation java.io.StringReader;
+//importannotation java.text.MessageFormat;
+//importannotation java.util.Enumeration;
+//importannotation java.util.Properties;
 //
 ///**
 // * @project 账户体系相关

@@ -1,7 +1,7 @@
 package com.cmcm.config;
 
-//import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
-//import org.springframework.context.annotation.Configuration;
+//importannotation com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
+//importannotation org.springframework.context.annotation.Configuration;
 
 /**
  * @author hongfei

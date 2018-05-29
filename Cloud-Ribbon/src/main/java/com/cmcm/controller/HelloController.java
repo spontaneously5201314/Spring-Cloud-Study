@@ -1,14 +1,14 @@
 //package com.cmcm.controller;
 //
-//import com.cmcm.config.PropertyConfigurer;
-//import com.cmcm.ribbon.MyRibbonConfiguration;
-//import com.ctrip.framework.apollo.Config;
-//import com.ctrip.framework.apollo.ConfigService;
-//import org.springframework.beans.factory.annotation.Value;
-//import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-//import org.springframework.cloud.netflix.ribbon.RibbonClient;
-//import org.springframework.web.bind.annotation.GetMapping;
-//import org.springframework.web.bind.annotation.RestController;
+//importannotation com.cmcm.config.PropertyConfigurer;
+//importannotation com.cmcm.ribbon.MyRibbonConfiguration;
+//importannotation com.ctrip.framework.apollo.Config;
+//importannotation com.ctrip.framework.apollo.ConfigService;
+//importannotation org.springframework.beans.factory.annotation.Value;
+//importannotation org.springframework.cloud.client.loadbalancer.LoadBalanced;
+//importannotation org.springframework.cloud.netflix.ribbon.RibbonClient;
+//importannotation org.springframework.web.bind.annotation.GetMapping;
+//importannotation org.springframework.web.bind.annotation.RestController;
 //
 ///**
 // * @author hongfei
