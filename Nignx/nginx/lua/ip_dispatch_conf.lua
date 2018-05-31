@@ -1,0 +1,6 @@
+redis_host_ip = 'arrowapn1-dist.ntnfog.0001.apne1.cache.amazonaws.com'
+--redis_host_ip = 'arrowapn1-dist-new.ntnfog.ng.0001.apne1.cache.amazonaws.com'
+redis_host_port = '6379'
+redis_host_pw = ''
+default_local = 'arrowagent-1092579265.ap-northeast-1.elb.amazonaws.com'
+config_local = 'arrowagent-1092579265.ap-northeast-1.elb.amazonaws.com:9001/msg-dc-gc-inner'
