@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @SpringBootApplication
 //@EnableContentService
 //@EnableAsync
-@Import(MyImportSelector.class)
+//@Import(MyImportSelector.class)
 public class Application {
 
     public static void main(String[] args) {
@@ -45,8 +45,8 @@ public class Application {
 //        System.out.println("异步调用完毕");
 
         //看看自己注册使用的registry能不能使用
-        System.out.println(context.getBean(Person.class));
-        System.out.println(context.getBean("spontaneously"));
-        context.close();
+//        System.out.println(context.getBean(Person.class));
+//        System.out.println(context.getBean("spontaneously"));
+//        context.close();
     }
 }

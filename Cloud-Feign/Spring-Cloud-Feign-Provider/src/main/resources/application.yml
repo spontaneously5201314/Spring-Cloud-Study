@@ -21,4 +21,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:8080/eureka
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: true       #如果配置prefer-ip-address表示把自己的ip注册到eureka中去,如果不配置,表示把主机名注册到eureka中去

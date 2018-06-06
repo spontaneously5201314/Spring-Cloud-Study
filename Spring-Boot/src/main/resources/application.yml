@@ -9,6 +9,11 @@ endpoints:
     enabled: true
 logging:
   level: error
+#server:
+#  tomcat:
+#    accesslog:
+#      enabled: true
+#      directory: /opt/idea/workspace/Spring-Cloud-Study/Spring-Boot/src/main/resources/
 #logging:
 #  level:
 #   root: trace

@@ -18,3 +18,8 @@
 
 4.安装maven
   http://blog.csdn.net/clementad/article/details/46898013
+  
+5.maven->gradle
+  gradle init --type pom
+  
+5.

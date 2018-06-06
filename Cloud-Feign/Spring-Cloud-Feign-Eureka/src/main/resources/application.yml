@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: cloud-fegin-eureka-server
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 10
+    metadata-map:
+      - name: Spontaneously
+        value: 测试
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      - name: defaultZone
+        value: http://${eureka.instance.hostname}:${server.port}/eureka
+logging:
+  level: debug
