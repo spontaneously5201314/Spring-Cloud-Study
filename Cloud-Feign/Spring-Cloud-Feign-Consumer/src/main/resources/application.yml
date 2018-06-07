@@ -1,20 +1,21 @@
 server:
   port: 9051
-
 spring:
   application:
     name: cloud-feign-consumer
-
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8080/eureka/
+      defaultZone: http://spontaneously:123456@localhost:8080/eureka/
+  instance:
+    prefer-ip-address: true
 feign:
   hystrix:
     enabled: true
-
 logging:
-  level: debug
+  level:
+    root: info
+
 
 #Ribbon 超时时间设置
 #ribbon:

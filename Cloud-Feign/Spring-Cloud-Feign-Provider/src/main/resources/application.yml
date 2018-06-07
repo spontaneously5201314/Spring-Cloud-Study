@@ -11,14 +11,23 @@ spring:
     schema: classpath:schema.sql
     data: classpath:data.sql
   application:
-    name: feign-provider
+    name: cloud-feign-provider
+  aop:
+    auto: true
+    proxy-target-class: false
 logging:
   level:
     root: info
     org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBindex: trace.
+    org.hibernate.type.descriptor.sql.BasicExtractor: trace
+    com.cmcm.study: debug
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8080/eureka
+      defaultZone: http://spontaneously:123456@localhost:8080/eureka
+#    healthcheck:
+#      enabled: true
   instance:
-    prefer-ip-address: true       #如果配置prefer-ip-address表示把自己的ip注册到eureka中去,如果不配置,表示把主机名注册到eureka中去
+    prefer-ip-address: true     #如果配置prefer-ip-address表示把自己的ip注册到eureka中去,如果不配置,表示把主机名注册到eureka中去
+#    instance-id: Spontaneously

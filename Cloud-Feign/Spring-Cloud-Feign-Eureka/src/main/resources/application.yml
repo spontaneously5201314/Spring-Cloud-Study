@@ -15,6 +15,12 @@ eureka:
     fetch-registry: false
     service-url:
       - name: defaultZone
-        value: http://${eureka.instance.hostname}:${server.port}/eureka
+        value: http://spontaneously:123456@${eureka.instance.hostname}:${server.port}/eureka
 logging:
   level: debug
+security:
+  basic:
+    enabled: true
+  user:
+    name: spontaneously
+    password: 123456
