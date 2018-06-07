@@ -15,8 +15,6 @@ feign:
 logging:
   level:
     root: info
-
-
 #Ribbon 超时时间设置
 #ribbon:
 #  ConnectTimeout: 500
