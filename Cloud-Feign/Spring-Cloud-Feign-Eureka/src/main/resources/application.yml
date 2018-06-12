@@ -4,6 +4,8 @@ spring:
   application:
     name: cloud-fegin-eureka-server
 eureka:
+  datacenter: cloud
+  environment: Spontaneously
   instance:
     hostname: localhost
     lease-renewal-interval-in-seconds: 10
@@ -16,6 +18,8 @@ eureka:
     service-url:
       - name: defaultZone
         value: http://spontaneously:123456@${eureka.instance.hostname}:${server.port}/eureka
+  dashboard:
+    enabled: true
 logging:
   level: debug
 security:

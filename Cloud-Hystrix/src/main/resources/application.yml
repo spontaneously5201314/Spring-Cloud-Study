@@ -1,0 +1,19 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: hystrix-turbine
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://spontaneously:123456@localhost:8080/eureka/
+  instance:
+    prefer-ip-address: true
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: cloud-feign-consumer
+  cluster-name-expression: "'default'"
+logging:
+  level:
+    com.netflix.trubine.monitor: debug

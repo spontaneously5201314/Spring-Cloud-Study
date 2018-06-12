@@ -1,9 +1,6 @@
 package com.cmcm.study.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * 模拟注解
@@ -12,7 +9,8 @@ import java.lang.annotation.Target;
  * @create 2018-05-02 下午4:51
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD, ElementType.METHOD, ElementType.TYPE})
+@Target({ElementType.FIELD, ElementType.METHOD, ElementType.TYPE, ElementType.TYPE_PARAMETER})
+@Inherited
 public @interface MyAnnotation {
 
     String name() default "myAnnotation";

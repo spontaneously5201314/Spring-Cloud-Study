@@ -16,7 +16,7 @@ public class HelloService {
 
     @HystrixCommand(fallbackMethod = "failBack")
     public String call() {
-        return restTemplate.getForEntity("http://ribbon/index", String.class).getBody();
+        return restTemplate.getForEntity("http://cloud-feign-provider/getNameById/{id}", String.class).getBody();
     }
 
     private String failBack() {

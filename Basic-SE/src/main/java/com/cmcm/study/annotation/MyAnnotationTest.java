@@ -1,5 +1,10 @@
 package com.cmcm.study.annotation;
 
+import com.cmcm.study.entity.Student;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
+
 /**
  * @author hongfei
  * @create 2018-05-02 下午4:53
@@ -20,10 +25,24 @@ public class MyAnnotationTest {
             MyAnnotation annotation = MyAnnotationTest.class.getMethod("main", String[].class).getAnnotation(MyAnnotation.class);
             System.out.println(annotation.name());
         }
-        if(MyAnnotationTest.class.getField("name").isAnnotationPresent(MyAnnotation.class)){
+        Field[] fields = MyAnnotationTest.class.getDeclaredFields();
+        for (Field field : fields) {
+            System.out.println(field.getName());
+        }
+        if(MyAnnotationTest.class.getDeclaredField("name").isAnnotationPresent(MyAnnotation.class)){
             MyAnnotation annotation = MyAnnotationTest.class.getDeclaredField("name").getAnnotation(MyAnnotation.class);
             System.out.println(annotation.name());
         }
+
+
+        Annotation[] annotations = MyAnnotationInherited.class.getAnnotations();
+        for (Annotation annotation : annotations){
+            System.out.println(annotation.annotationType());
+        }
+
+
+        AnnotationTypeParm<Student> parm = new AnnotationTypeParm<>();
+        System.out.println(parm.getValue().toString());
     }
 
 }

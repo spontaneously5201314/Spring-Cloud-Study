@@ -9,12 +9,15 @@ eureka:
       defaultZone: http://spontaneously:123456@localhost:8080/eureka/
   instance:
     prefer-ip-address: true
+#    home-page-url-path: /consumer
 feign:
   hystrix:
     enabled: true
 logging:
   level:
     root: info
+    org.springframework.context.annotation: debug
+    com.cmcm.study.service.HelloService: debug
 #Ribbon 超时时间设置
 #ribbon:
 #  ConnectTimeout: 500

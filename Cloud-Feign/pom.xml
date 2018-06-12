@@ -21,6 +21,7 @@
         <module>Spring-Cloud-Feign-Consumer</module>
         <module>Spring-Cloud-Feign-Eureka</module>
         <module>Spring-Cloud-Feign-Provider</module>
+        <module>Spring-Cloud-Hystrix-Dashboard</module>
     </modules>
 
     <properties>
@@ -53,7 +54,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

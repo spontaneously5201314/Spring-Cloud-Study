@@ -1,0 +1,6 @@
+server:
+  port: 9080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://spontaneously:123456@localhost:8080/eureka
