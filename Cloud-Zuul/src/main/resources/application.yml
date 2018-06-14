@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zuul
+server:
+  port: 5555
+zuul:
+  routes:
+#    cloud-feign-consumer: /consumer/**
+#    cloud-feign-provider: /provider/**
+#    common: /common/**
+    spontaneously:
+      path: /provider1/**
+      serviceId: cloud-feign-provider
+  sensitive-headers: cookie
+  add-host-header: true
+#  ignored-services: '*'
+logging:
+  level:
+    org.springframework.cloud.netflix.zuul: debug
+eureka:
+  client:
+    service-url:
+      defaultZone: http://spontaneously:123456@localhost:8080/eureka
