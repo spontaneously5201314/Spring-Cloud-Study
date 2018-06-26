@@ -1,14 +1,14 @@
 package com.cmcm.study;
 
+import de.codecentric.boot.admin.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-@EnableEurekaServer
-public class SpringCloudFeignEurekaApplication {
+@EnableAdminServer
+public class SpringBootAdminServerDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudFeignEurekaApplication.class, args);
+		SpringApplication.run(SpringBootAdminServerDemoApplication.class, args);
 	}
 }

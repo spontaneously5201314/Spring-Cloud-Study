@@ -5,6 +5,7 @@ import com.netflix.zuul.context.RequestContext;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author hongfei
  * @create 2018-04-24 下午3:50
  */
+@Component
 public class MyZuulFilter extends ZuulFilter{
 
     private static final Logger logger = LoggerFactory.getLogger(MyZuulFilter.class);
@@ -37,6 +39,7 @@ public class MyZuulFilter extends ZuulFilter{
         RequestContext currentContext = RequestContext.getCurrentContext();
         HttpServletRequest request = currentContext.getRequest();
         String token = request.getParameter("token");
+        logger.error("收到的参数是{}", request.getParameterMap());
         if(StringUtils.isEmpty(token) || StringUtils.isBlank(token)){
             try {
                 doSomething();

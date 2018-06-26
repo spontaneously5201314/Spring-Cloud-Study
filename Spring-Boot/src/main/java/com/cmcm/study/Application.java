@@ -1,6 +1,7 @@
 package com.cmcm.study;
 
 import cmcm.chapter.domain.Person;
+import com.cmcm.study.annotation.Student;
 import com.cmcm.study.importer.registry.MyImportSelector;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -48,5 +49,9 @@ public class Application {
 //        System.out.println(context.getBean(Person.class));
 //        System.out.println(context.getBean("spontaneously"));
 //        context.close();
+
+        Student bean = context.getBean(Student.class);
+        System.out.println(bean.toString());
+
     }
 }

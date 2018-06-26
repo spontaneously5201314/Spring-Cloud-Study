@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Spring-Cloud-Config-Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/koreyoshi5201314/Spring-Cloud-Study.git
+server:
+  port: 7008
+eureka:
+  client:
+    service-url:
+      defaultZone: http://spontaneously:123456@localhost:8080/eureka
+logging:
+  level: debug

@@ -11,8 +11,11 @@ zuul:
     spontaneously:
       path: /provider1/**
       serviceId: cloud-feign-provider
-  sensitive-headers: cookie
-  add-host-header: true
+#      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+#  sensitive-headers: cookie
+#  add-host-header: true
+#  prefix: /api
+#  strip-prefix: false
 #  ignored-services: '*'
 logging:
   level:
@@ -21,3 +24,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://spontaneously:123456@localhost:8080/eureka
+endpoints:
+  routes:
+    enabled: true
+management:
+  security:
+    enabled: false

@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>cloud-config</artifactId>
+	<artifactId>Spring-Boot-Admin</artifactId>
 	<version>${build.version}</version>
 	<packaging>pom</packaging>
 
-	<name>Cloud-Config</name>
-	<description>Demo project for Spring Cloud Config</description>
+	<name>Spring-Boot-Admin</name>
+	<description>Demo project for Spring Boot Admin</description>
 
 	<parent>
 		<artifactId>Spring-Cloud-Study</artifactId>
@@ -16,31 +16,29 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<modules>
-		<module>Cloud-Config-Server</module>
-		<module>Cloud-Config-Client</module>
-	</modules>
+    <modules>
+        <module>Spring-Boot-Admin-Server</module>
+        <module>Spring-Boot-Admin-Client</module>
+    </modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<!--<spring-cloud.version>Finchley.RC1</spring-cloud.version>-->
+		<spring-boot-admin.version>2.0.1</spring-boot-admin.version>
+		<!--<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>-->
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -50,6 +48,21 @@
 
 	<dependencyManagement>
 		<dependencies>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -57,6 +70,13 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<!--<dependency>
+				<groupId>de.codecentric</groupId>
+				<artifactId>spring-boot-admin-dependencies</artifactId>
+				<version>${spring-boot-admin.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>-->
 		</dependencies>
 	</dependencyManagement>
 
@@ -68,17 +88,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<repositories>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 
 
 </project>

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Spring-Cloud-Config-Client
+  cloud:
+    config:
+      uri: http://localhost:7008
+server:
+  port: 7009
+eureka:
+  client:
+    service-url:
+      defaultZone: http://spontaneously:123456@localhost:8080/eureka
+endpoints:
+  routes:
+    enabled: true
+management:
+  security:
+    enabled: false
