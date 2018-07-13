@@ -13,7 +13,7 @@
 	<parent>
 		<artifactId>Spring-Boot-Admin</artifactId>
 		<groupId>com.cmcm.study</groupId>
-		<version>0.0.1</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<properties>
