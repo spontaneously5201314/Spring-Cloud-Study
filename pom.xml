@@ -26,6 +26,7 @@
         <module>Shell_Action</module>
         <module>Docker_Action</module>
         <module>Spring-Action</module>
+        <module>Sharding-Sphere</module>
     </modules>
 
     <name>Spring-Cloud-Study</name>
