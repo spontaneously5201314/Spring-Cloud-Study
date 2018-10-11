@@ -13,5 +13,8 @@ public interface MyFunctionalInterface<A> {
 
     boolean hello();
 
+    @Override
     boolean equals(Object object);
+
+//    abstract String saySomething();
 }

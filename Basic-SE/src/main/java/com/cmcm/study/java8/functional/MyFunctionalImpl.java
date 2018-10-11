@@ -20,4 +20,9 @@ public class MyFunctionalImpl implements MyFunctionalInterface<String>{
     public boolean hello() {
         return false;
     }
+
+//    @Override
+    public String saySomething() {
+        return null;
+    }
 }
