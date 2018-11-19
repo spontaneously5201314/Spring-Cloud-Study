@@ -12,4 +12,6 @@ server:
 #    enabled: true
 #  user:
 #    name: user
+logging:
+  level: debug
 #    password: 123456
