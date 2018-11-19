@@ -11,7 +11,7 @@ public interface MyFunctionalInterface<A> {
         return null;
     }
 
-    boolean hello();
+    boolean hello(String color);
 
     @Override
     boolean equals(Object object);

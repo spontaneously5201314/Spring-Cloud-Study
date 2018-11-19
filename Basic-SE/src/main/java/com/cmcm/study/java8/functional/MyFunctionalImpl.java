@@ -17,6 +17,10 @@ public class MyFunctionalImpl implements MyFunctionalInterface<String>{
     }
 
     @Override
+    public boolean hello(String color) {
+        return false;
+    }
+
     public boolean hello() {
         return false;
     }
