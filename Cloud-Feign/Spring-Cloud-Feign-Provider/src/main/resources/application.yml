@@ -26,6 +26,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://spontaneously:123456@localhost:8080/eureka
+    register-with-eureka: true
 #    healthcheck:
 #      enabled: true
   instance:

@@ -1,6 +1,9 @@
 spring:
   application:
     name: eureka
+  output:
+    ansi:
+      enabled: detect
 server:
   port: 8761
 #eureka:

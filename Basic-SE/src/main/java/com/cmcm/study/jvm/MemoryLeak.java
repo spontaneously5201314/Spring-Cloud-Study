@@ -1,5 +1,6 @@
 package com.cmcm.study.jvm;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +24,7 @@ public class MemoryLeak {
         return new char[1024 * 1024];
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, IOException {
         int i = 0;
         while (i < 1000) {
             if (i == 0) {
