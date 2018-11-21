@@ -15,10 +15,12 @@ public class OrderExample {
     private static int a = 0;
     private static boolean flag = false;
 
-    private static ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("current-%s").build();
+    private static final ExecutorService POOL = Executors.newCachedThreadPool();
 
-    private static final ExecutorService POOL = new ThreadPoolExecutor(
-            2, 10, 1000, TimeUnit.SECONDS, new ArrayBlockingQueue<Order>(1024), threadFactory);
+//    private static ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("current-%s").build();
+//
+//    private static final ExecutorService POOL = new ThreadPoolExecutor(
+//            2, 10, 1000L, TimeUnit.SECONDS, new ArrayBlockingQueue<Order>(1024), threadFactory);
 
     private static void write() {
         a = 1;
