@@ -6,15 +6,15 @@ spring:
       enabled: detect
 server:
   port: 8761
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8080/eureka/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 #security:
 #  basic:
 #    enabled: true
 #  user:
 #    name: user
-logging:
-  level: debug
+#logging:
+#  level: debug
 #    password: 123456

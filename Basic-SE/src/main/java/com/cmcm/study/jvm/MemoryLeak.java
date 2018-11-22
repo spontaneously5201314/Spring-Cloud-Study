@@ -28,15 +28,19 @@ public class MemoryLeak {
         int i = 0;
         while (i < 1000) {
             if (i == 0) {
-                Thread.sleep(5001);
+                Thread.sleep(1000);
                 System.out.println("start = [ " + System.currentTimeMillis() + " ]");
             } else {
-                Thread.sleep(4001);
+                Thread.sleep(1000);
             }
-            bigIntObj.add(generate1M());
+            if (i % 2 == 0) {
+                bigIntObj.add(generate1M());
+            } else {
+                bigCharObj.add(generate1MChar());
+            }
+
             i++;
         }
-        System.in.read();
     }
 
 }
