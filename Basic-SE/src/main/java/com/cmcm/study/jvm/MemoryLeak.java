@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 自己写一个内存泄漏的程序出来
- *
+ * JVM参数-Xms8m -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC
  * @author Spontaneously
  * @date 2018/11/18 11:45
  **/

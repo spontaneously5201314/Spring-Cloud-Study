@@ -2,7 +2,7 @@ package com.cmcm.study.jvm;
 
 /**
  * 通过-Xmx和-Xms来调整堆的大小，并通过Runtime类来获得jvm运行期间的使用的堆的大小
- *
+ *　-Xmx20m -Xms5m
  * @author Spontaneously
  * @time 2018-11-21 下午8:03
  */
