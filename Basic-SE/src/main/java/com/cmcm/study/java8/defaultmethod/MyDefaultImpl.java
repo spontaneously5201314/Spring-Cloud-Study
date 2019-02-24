@@ -6,4 +6,9 @@ package com.cmcm.study.java8.defaultmethod;
  */
 public class MyDefaultImpl implements MyDefaultInter {
 
+    public static void main(String[] args) {
+        MyDefaultImpl myDefault = new MyDefaultImpl();
+        System.out.println(myDefault.say());
+    }
+
 }
